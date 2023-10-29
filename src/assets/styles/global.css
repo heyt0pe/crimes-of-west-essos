@@ -1,0 +1,52 @@
+/* GLOBAL STYLES */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-red: #951B1F;
+    --link-blue: #2D208A;
+    --dark: #141414;
+    --desktop-max-width: 1150px;
+    --header-height: 65px;
+    --button-height: 50px;
+    --anim-interval: 0.3s;
+}
+
+body {
+    margin: 0;
+    background: #EEE;
+}
+
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section div.inner {
+    width: min(90%, var(--desktop-max-width));
+    margin: 0 auto;
+    padding: 6vh 0;
+}
+
+section div.inner h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+section .inner h2::after {
+    content: "";
+    width: 1.25rem;
+    height: 0.165rem;
+    background: black;
+    position: absolute;
+    top: calc(100% - 0.9rem);
+    margin-left: 0.375rem;
+}
